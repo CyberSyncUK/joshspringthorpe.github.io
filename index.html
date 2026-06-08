@@ -1,414 +1,1254 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>CyberSync UK | Educate. Protect. Empower.</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="CyberSync UK helps UK small businesses and IT professionals understand, prepare for, and defend against modern cyber threats. Practical guidance, no jargon." />
-		<meta property="og:title" content="CyberSync UK | Educate. Protect. Empower." />
-		<meta property="og:description" content="Practical cybersecurity education and guidance for UK SMBs and IT professionals." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://cybersync.uk" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="CyberSync UK | Educate. Protect. Empower." />
-		<meta name="twitter:description" content="Practical cybersecurity education and guidance for UK SMBs and IT professionals." />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/brand.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Springthorpe | Cybersecurity</title>
+  <meta name="description" content="Josh Springthorpe — Technical Account Manager at Huntress. Practical cybersecurity for MSPs and IT professionals. No jargon, no scare tactics." />
+  <meta property="og:title" content="Josh Springthorpe | Cybersecurity" />
+  <meta property="og:description" content="Practical cybersecurity for MSPs and IT professionals. No jargon, no scare tactics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joshspringthorpe.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Josh Springthorpe | Cybersecurity" />
+  <meta name="twitter:description" content="Practical cybersecurity for MSPs and IT professionals. No jargon, no scare tactics." />
+  <!-- Favicon: add favicon.ico / logo_shield.png to <images/> when available -->
 
-		<div id="wrapper">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=JetBrains+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-			<header id="header">
-				<div class="logo logo-img">
-					<img src="images/logo_shield.png" alt="CyberSync UK Shield Logo" class="header-logo" />
-				</div>
-				<div class="content">
-					<div class="inner">
-						<h1 class="brand-heading">CyberSync UK</h1>
-						<p class="brand-tagline">
-							<span>Educate</span>
-							<span class="separator">|</span>
-							<span>Protect</span>
-							<span class="separator">|</span>
-							<span>Empower</span>
-						</p>
-						<p class="brand-sub">Practical cybersecurity for UK businesses and the people who defend them.</p>
-					</div>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#business">Businesses</a></li>
-						<li><a href="#itpros">IT Pros</a></li>
-						<li><a href="#content">Content</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+  <style>
 
-			<div id="main">
+/* ═══════════════════════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════════════════════ */
 
-				<!-- About -->
-				<article id="about">
-					<h2 class="major">About CyberSync UK</h2>
-					<p class="lead-text">Cyber threats don't care how big your business is. But most security advice is written for enterprise IT teams with six-figure budgets. <strong>CyberSync UK exists to change that.</strong></p>
-					<p>I'm Josh — former NHS frontline worker turned Technical &amp; Security Manager, now Technical Account Manager at Huntress. My career hasn't been a straight line, but the thread running through all of it has been the same: <strong>helping people stay protected</strong>.</p>
-					<p>After years in the MSP world deploying security stacks for UK small businesses, I saw the same story play out over and over. Business owners who were smart, capable, and completely blindsided by threats they didn't know existed. IT technicians who wanted to grow into security but didn't know where to start. Good people, let down by an industry that speaks in jargon and sells fear.</p>
-					<p>CyberSync UK is the resource I wish had existed. No fluff, no scare tactics — just honest, practical guidance rooted in real-world UK experience.</p>
-					<div class="mission-block">
-						<div class="mission-item">
-							<span class="mission-icon icon solid fa-graduation-cap"></span>
-							<div>
-								<strong>Educate</strong>
-								<p>Plain-English explanations of complex threats and technologies</p>
-							</div>
-						</div>
-						<div class="mission-item">
-							<span class="mission-icon icon solid fa-shield-alt"></span>
-							<div>
-								<strong>Protect</strong>
-								<p>Practical steps your business or team can take right now</p>
-							</div>
-						</div>
-						<div class="mission-item">
-							<span class="mission-icon icon solid fa-bolt"></span>
-							<div>
-								<strong>Empower</strong>
-								<p>Building the confidence and capability to own your security posture</p>
-							</div>
-						</div>
-					</div>
-				</article>
+:root {
+  --void:        #070709;
+  --bg-slate:    #0E1017;
+  --panel:       #0d1424;
+  --surface:     #111d33;
 
-				<!-- For Your Business -->
-				<article id="business">
-					<h2 class="major">For Your Business</h2>
-					<p class="lead-text">You run a business. You're not an IT expert — you don't need to be. But you do need to know what's coming for you, and what to do about it.</p>
-					<p>UK small and medium businesses are the <strong>number one target</strong> for cybercriminals. Not because you're interesting — because you're accessible. Most attacks aren't sophisticated. They rely on one unlocked door: a weak password, an untrained employee, an email that looked legitimate.</p>
-					<h3>The threats you need to know about</h3>
-					<div class="threat-grid">
-						<div class="threat-card">
-							<span class="icon solid fa-envelope-open-text"></span>
-							<strong>Phishing &amp; Email Fraud</strong>
-							<p>Still the #1 way attackers get in. Modern phishing is hard to spot — even for technical people.</p>
-						</div>
-						<div class="threat-card">
-							<span class="icon solid fa-lock"></span>
-							<strong>Ransomware</strong>
-							<p>Your files, encrypted. Your business, stopped. The average UK SMB recovery cost runs into six figures.</p>
-						</div>
-						<div class="threat-card">
-							<span class="icon solid fa-user-secret"></span>
-							<strong>Business Email Compromise</strong>
-							<p>Someone pretends to be your CEO, supplier, or bank. Money moves before anyone notices.</p>
-						</div>
-						<div class="threat-card">
-							<span class="icon solid fa-robot"></span>
-							<strong>AI-Powered Threats</strong>
-							<p>Attackers now use AI to write perfect phishing emails and fake voices. The bar just got lower for them.</p>
-						</div>
-					</div>
-					<h3>Where to start</h3>
-					<p>The good news: the most impactful security measures cost very little. The <strong>NCSC's Cyber Essentials</strong> scheme covers the five controls that block the vast majority of common attacks. CyberSync UK breaks down exactly what each one means for your business — no technical degree required.</p>
-					<div class="cta-block">
-						<p>Follow along for weekly, plain-English guidance built specifically for UK businesses like yours.</p>
-						<ul class="cta-links">
-							<li><a href="https://www.linkedin.com/company/cybersyncuk" target="_blank" class="button primary small icon brands fa-linkedin"> Follow on LinkedIn</a></li>
-							<li><a href="https://www.youtube.com/@CyberSyncUK" target="_blank" class="button small icon brands fa-youtube"> Watch on YouTube</a></li>
-						</ul>
-					</div>
-				</article>
+  --gold:        #E5A93C;
+  --gold-dim:    #B8831A;
+  --gold-faint:  rgba(229,169,60,0.12);
+  --cyan:        #00F0FF;
+  --cyan-faint:  rgba(0,240,255,0.08);
+  --magenta:     #FF2D78;
 
-				<!-- For IT Pros -->
-				<article id="itpros">
-					<h2 class="major">For IT Pros</h2>
-					<p class="lead-text">You're early in your career, you're curious about security, and you're trying to figure out where to focus. You've come to the right place.</p>
-					<p>CyberSync UK is built partly for you — the Level 1 technician who wants to level up, the IT generalist who keeps getting pulled into security incidents, the person who's passed their CompTIA and is wondering what comes next.</p>
-					<h3>What we cover</h3>
-					<div class="pillar-grid">
-						<div class="pillar-card">
-							<strong>Microsoft 365 Security</strong>
-							<p>Conditional Access, Entra ID, Defender, Secure Score — the platform most UK SMBs live on, hardened properly.</p>
-						</div>
-						<div class="pillar-card">
-							<strong>Azure &amp; Cloud Security</strong>
-							<p>RBAC, resource hardening, Sentinel — building a security posture in the cloud without breaking the bank.</p>
-						</div>
-						<div class="pillar-card">
-							<strong>AI Threats &amp; Defence</strong>
-							<p>How attackers use AI and how defenders can too. Copilot security, AI-powered phishing, what's real and what's hype.</p>
-						</div>
-						<div class="pillar-card">
-							<strong>UK Threat Landscape</strong>
-							<p>Active campaigns targeting UK organisations. NCSC advisories translated into what you actually need to do.</p>
-						</div>
-						<div class="pillar-card">
-							<strong>Practical Defence</strong>
-							<p>Step-by-step guides, Cyber Essentials walkthroughs, free tools, and real configurations you can implement today.</p>
-						</div>
-					</div>
-					<h3>The honest truth</h3>
-					<p>Security is learned by doing. I'll point you at the right labs, the right resources, and the right mindset. No gatekeeping, no "you should already know this" energy. Everyone started somewhere.</p>
-					<div class="cta-block">
-						<ul class="cta-links">
-							<li><a href="https://www.youtube.com/@CyberSyncUK" target="_blank" class="button primary small icon brands fa-youtube"> Tutorials on YouTube</a></li>
-							<li><a href="https://twitter.com/CyberSyncUK" target="_blank" class="button small icon brands fa-twitter"> Follow on X</a></li>
-							<li><a href="https://blog.cybersync.uk" target="_blank" class="button small icon solid fa-rss"> Read the Blog</a></li>
-						</ul>
-					</div>
-				</article>
+  --sky-top:     #1a0a2e;
+  --sky-mid:     #2d0a4e;
+  --sky-hor:     #8b0057;
+  --sky-low:     #FF2D78;
 
-				<!-- Content Hub -->
-				<article id="content">
-					<h2 class="major">Content Hub</h2>
-					<p class="lead-text">Everything CyberSync UK puts out is free, practical, and rooted in what's actually happening to UK businesses right now.</p>
-					<div class="platform-grid">
-						<a href="https://www.linkedin.com/company/cybersyncuk" target="_blank" class="platform-card">
-							<span class="icon brands fa-linkedin"></span>
-							<div>
-								<strong>LinkedIn</strong>
-								<p>Weekly threat breakdowns, quick wins, and security news for business owners and IT managers. 3–5 posts per week.</p>
-							</div>
-						</a>
-						<a href="https://www.youtube.com/@CyberSyncUK" target="_blank" class="platform-card">
-							<span class="icon brands fa-youtube"></span>
-							<div>
-								<strong>YouTube</strong>
-								<p>Tutorials, walkthroughs, and explainers. From M365 hardening to threat actor breakdowns — all built for UK contexts.</p>
-							</div>
-						</a>
-						<a href="https://twitter.com/CyberSyncUK" target="_blank" class="platform-card">
-							<span class="icon brands fa-twitter"></span>
-							<div>
-								<strong>X / Twitter</strong>
-								<p>Real-time threat commentary, hot takes, and community discussion. Where the security community actually lives.</p>
-							</div>
-						</a>
-						<a href="https://www.instagram.com/cybersyncuk" target="_blank" class="platform-card">
-							<span class="icon brands fa-instagram"></span>
-							<div>
-								<strong>Instagram</strong>
-								<p>Visual guides, infographics, and awareness content. Security knowledge in a format you can share with your team.</p>
-							</div>
-						</a>
-						<a href="https://blog.cybersync.uk" target="_blank" class="platform-card platform-card--blog">
-							<span class="icon solid fa-rss"></span>
-							<div>
-								<strong>Blog</strong>
-								<p>In-depth articles, walkthroughs, and threat analysis. The long-form home for everything CyberSync UK.</p>
-							</div>
-						</a>
-					</div>
-					<div class="topics-block">
-						<h3>Recent topics</h3>
-						<ul class="topic-tags">
-							<li>M365 Conditional Access</li>
-							<li>Phishing Defence</li>
-							<li>Cyber Essentials</li>
-							<li>Entra ID Hardening</li>
-							<li>AI-Powered Attacks</li>
-							<li>Ransomware Response</li>
-							<li>NCSC Guidance</li>
-							<li>Microsoft Defender</li>
-							<li>UK Threat Landscape</li>
-							<li>MFA Best Practices</li>
-						</ul>
-					</div>
-				</article>
+  --text-plat:   #F0F0F5;
+  --text-body:   #8ab4cc;
+  --text-grey:   #505565;
+  --text-dim:    #3d5a72;
 
-				<!-- Blog (live feed) -->
-				<article id="blog">
-					<h2 class="major">Latest from the Blog</h2>
-					<p class="lead-text">In-depth guides, threat breakdowns, and practical walkthroughs — published at <a href="https://blog.cybersync.uk" target="_blank" style="color:#00A8E8;">blog.cybersync.uk</a></p>
+  --font-display: 'Orbitron', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+  --font-body:    'IBM Plex Sans', sans-serif;
 
-					<!-- Live feed injected by JS -->
-					<div id="blog-feed" class="blog-feed">
-						<div class="blog-loading">
-							<span class="icon solid fa-circle-notch fa-spin"></span>
-							<span>Loading latest posts&hellip;</span>
-						</div>
-					</div>
+  --section-pad: clamp(4rem, 8vw, 7rem);
+  --inner-max:   1100px;
+  --radius:      0; /* no rounded corners */
+}
 
-					<div class="cta-block" style="margin-top:1.5rem;">
-						<ul class="cta-links">
-							<li><a href="https://blog.cybersync.uk" target="_blank" class="button primary small icon solid fa-rss"> Visit the Blog</a></li>
-						</ul>
-					</div>
-				</article>
+/* ═══════════════════════════════════════════════════════════
+   RESET + BASE
+═══════════════════════════════════════════════════════════ */
 
-				<!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Get in Touch</h2>
-					<p>Whether you're a business owner wondering where to start, an IT pro with a question, or someone who wants to collaborate — I'd genuinely love to hear from you.</p>
-					<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" required />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" required />
-							</div>
-							<div class="field">
-								<label for="context">I'm a...</label>
-								<select name="context" id="context">
-									<option value="">Select one</option>
-									<option value="business-owner">Business owner / manager</option>
-									<option value="it-pro">IT professional</option>
-									<option value="collaborate">Looking to collaborate</option>
-									<option value="other">Other</option>
-								</select>
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4" required></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-						</ul>
-					</form>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/company/cybersyncuk" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.youtube.com/@CyberSyncUK" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-						<li><a href="https://twitter.com/CyberSyncUK" target="_blank" class="icon brands fa-twitter"><span class="label">X / Twitter</span></a></li>
-						<li><a href="https://www.instagram.com/cybersyncuk" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://blog.cybersync.uk" target="_blank" class="icon solid fa-rss"><span class="label">Blog</span></a></li>
-					</ul>
-				</article>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-			</div>
+html { scroll-behavior: smooth; font-size: 16px; }
 
-			<footer id="footer">
-				<p class="copyright">&copy; CyberSync UK 2026. &nbsp;|&nbsp; <span style="color: #00A8E8;">Educate. Protect. Empower.</span></p>
-			</footer>
+body {
+  background: var(--void);
+  color: var(--text-body);
+  font-family: var(--font-mono);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
 
-		</div>
+a { color: var(--cyan); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--gold); }
 
-		<button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()" title="Toggle deep dark mode">
-			<span class="toggle-icon">🌑</span>
-			<span class="toggle-label">Deep Dark</span>
-		</button>
+img { display: block; max-width: 100%; }
 
-		<div id="bg"></div>
+/* ═══════════════════════════════════════════════════════════
+   UTILITY: CORNER BRACKETS
+   Apply .bracketed to any position:relative parent
+═══════════════════════════════════════════════════════════ */
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+.bracketed { position: relative; }
 
-		<script>
-		/* ── Dark mode ── */
-		function toggleDarkMode() {
-			const body = document.body;
-			const btn = document.getElementById('darkModeToggle');
-			const isDark = body.classList.toggle('deep-dark');
-			btn.querySelector('.toggle-icon').textContent = isDark ? '☀️' : '🌑';
-			btn.querySelector('.toggle-label').textContent = isDark ? 'Light Mode' : 'Deep Dark';
-			localStorage.setItem('cybersync-dark', isDark ? '1' : '0');
-		}
-		if (localStorage.getItem('cybersync-dark') === '1') {
-			document.body.classList.add('deep-dark');
-			document.addEventListener('DOMContentLoaded', function () {
-				const btn = document.getElementById('darkModeToggle');
-				if (btn) {
-					btn.querySelector('.toggle-icon').textContent = '☀️';
-					btn.querySelector('.toggle-label').textContent = 'Light Mode';
-				}
-			});
-		}
+.bracketed::before,
+.bracketed::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--gold);
+  border-style: solid;
+  pointer-events: none;
+  transition: border-color 0.2s;
+}
 
-		/* ── Hashnode blog feed ──
-		   Replace CYBERSYNC_HASHNODE_HOST with your actual Hashnode publication host
-		   e.g. "blog.cybersync.uk" once your Hashnode custom domain is set up.
-		   Until then use your Hashnode username slug e.g. "cybersyncuk.hashnode.dev"
-		*/
-		(function () {
-			const HASHNODE_HOST = 'cybersyncuk.hashnode.dev'; // ← update this
-			const POST_COUNT = 4;
+.bracketed::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.bracketed::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
 
-			const query = `
-				query GetPosts($host: String!, $first: Int!) {
-					publication(host: $host) {
-						posts(first: $first) {
-							edges {
-								node {
-									title
-									brief
-									slug
-									publishedAt
-									readTimeInMinutes
-									tags { name }
-								}
-							}
-						}
-					}
-				}
-			`;
+/* ═══════════════════════════════════════════════════════════
+   UTILITY: TERMINAL FOOTER LINE
+═══════════════════════════════════════════════════════════ */
 
-			function formatDate(iso) {
-				return new Date(iso).toLocaleDateString('en-GB', {
-					day: 'numeric', month: 'short', year: 'numeric'
-				});
-			}
+.term {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-grey);
+  letter-spacing: 0.06em;
+  margin-top: 1.5rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(80,85,101,0.25);
+}
 
-			function renderPosts(posts) {
-				const feed = document.getElementById('blog-feed');
-				if (!posts || posts.length === 0) {
-					feed.innerHTML = '<p style="color:rgba(255,255,255,0.5);font-size:0.9rem;">No posts yet — check back soon.</p>';
-					return;
-				}
-				feed.innerHTML = posts.map(function (p) {
-					const tags = (p.tags || []).slice(0, 3).map(function (t) {
-						return '<span class="blog-tag">' + t.name + '</span>';
-					}).join('');
-					return [
-						'<a href="https://' + HASHNODE_HOST + '/' + p.slug + '" target="_blank" class="blog-card">',
-						'  <div class="blog-card__meta">',
-						'    <span class="blog-card__date">' + formatDate(p.publishedAt) + '</span>',
-						'    <span class="blog-card__read">' + p.readTimeInMinutes + ' min read</span>',
-						'  </div>',
-						'  <strong class="blog-card__title">' + p.title + '</strong>',
-						'  <p class="blog-card__brief">' + (p.brief || '') + '</p>',
-						tags ? '  <div class="blog-card__tags">' + tags + '</div>' : '',
-						'</a>'
-					].join('\n');
-				}).join('\n');
-			}
+/* ═══════════════════════════════════════════════════════════
+   UTILITY: STATUS TAG
+═══════════════════════════════════════════════════════════ */
 
-			function renderError() {
-				document.getElementById('blog-feed').innerHTML = [
-					'<div class="blog-error">',
-					'  <p>Couldn\'t load posts right now.</p>',
-					'  <a href="https://blog.cybersync.uk" target="_blank" class="button small">Visit the blog directly</a>',
-					'</div>'
-				].join('\n');
-			}
+.status-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--cyan);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
 
-			document.addEventListener('DOMContentLoaded', function () {
-				fetch('https://gql.hashnode.com', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({ query: query, variables: { host: HASHNODE_HOST, first: POST_COUNT } })
-				})
-				.then(function (r) { return r.json(); })
-				.then(function (data) {
-					var edges = data && data.data && data.data.publication && data.data.publication.posts && data.data.publication.posts.edges;
-					if (!edges) { renderError(); return; }
-					renderPosts(edges.map(function (e) { return e.node; }));
-				})
-				.catch(renderError);
-			});
-		})();
-		</script>
+/* ═══════════════════════════════════════════════════════════
+   UTILITY: SECTION TITLE
+═══════════════════════════════════════════════════════════ */
 
-	</body>
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 18px rgba(229,169,60,0.35);
+}
+
+.section-title .sep {
+  color: var(--text-grey);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.85em;
+  margin: 0 0.3em;
+}
+
+.section-title .sub {
+  color: var(--text-plat);
+}
+
+.section-intro {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-body);
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UTILITY: BUTTONS
+═══════════════════════════════════════════════════════════ */
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.65rem 1.4rem;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--void);
+  border: 1px solid var(--gold);
+}
+
+.btn-primary:hover {
+  background: #f0b840;
+  border-color: #f0b840;
+  color: var(--void);
+  box-shadow: 0 0 18px rgba(229,169,60,0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid rgba(229,169,60,0.5);
+}
+
+.btn-secondary:hover {
+  background: var(--gold-faint);
+  border-color: var(--gold);
+  color: var(--gold);
+  box-shadow: 0 0 14px rgba(229,169,60,0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════════════════════ */
+
+#site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(7,7,9,0.92);
+  border-bottom: 1px solid rgba(229,169,60,0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-inner {
+  max-width: var(--inner-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(229,169,60,0.4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-brand:hover { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  transition: color 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: 1px solid rgba(229,169,60,0.35);
+  color: var(--gold);
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(229,169,60,0.1);
+  gap: 0.75rem;
+  background: rgba(7,7,9,0.97);
+}
+
+.nav-mobile.open { display: flex; }
+
+.nav-mobile a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+}
+
+.nav-mobile a:hover { color: var(--gold); }
+
+/* ═══════════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════════ */
+
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 56px; /* nav height */
+
+  /* Synthwave sky gradient */
+  background: linear-gradient(
+    to bottom,
+    var(--sky-top)  0%,
+    var(--sky-mid)  45%,
+    var(--sky-hor)  78%,
+    var(--sky-low)  100%
+  );
+}
+
+/* Perspective grid — lower 40% of hero */
+#hero .hero-grid {
+  position: absolute;
+  bottom: 0; left: -40%; right: -40%;
+  height: 42%;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0,240,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,240,255,0.18) 1px, transparent 1px);
+  background-size: 44px 22px;
+  transform: perspective(220px) rotateX(52deg);
+  transform-origin: 50% 0%;
+  z-index: 0;
+}
+
+/* Scanline overlay */
+#hero .hero-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px, transparent 2px,
+    rgba(0,0,0,0.18) 2px, rgba(0,0,0,0.18) 4px
+  );
+}
+
+/* Large background terminal prompt — watermark */
+#hero .hero-bg-text {
+  position: absolute;
+  right: -2%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: clamp(3rem, 9vw, 8rem);
+  color: var(--cyan);
+  opacity: 0.05;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Hero content */
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: var(--inner-max);
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  width: 100%;
+}
+
+.hero-panel {
+  display: inline-block;
+  max-width: 680px;
+  padding: 2.5rem 3rem;
+  background: rgba(7,7,9,0.55);
+  border: 1px solid rgba(229,169,60,0.25);
+  backdrop-filter: blur(4px);
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.hero-name .name-josh {
+  display: block;
+  color: var(--cyan);
+  text-shadow:
+    0 0 10px var(--cyan),
+    0 0 30px rgba(0,240,255,0.4);
+}
+
+.hero-name .name-sep {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.45em;
+  color: var(--text-grey);
+  vertical-align: middle;
+}
+
+.hero-name .name-last {
+  display: block;
+  color: var(--gold);
+  text-shadow:
+    0 0 10px var(--gold),
+    0 0 28px rgba(229,169,60,0.35);
+}
+
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: clamp(0.78rem, 1.5vw, 0.9rem);
+  color: var(--text-body);
+  line-height: 1.75;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION BASE
+═══════════════════════════════════════════════════════════ */
+
+.section {
+  padding: var(--section-pad) 2rem;
+  background: var(--void);
+}
+
+.section--alt {
+  background: var(--bg-slate);
+}
+
+.section-inner {
+  max-width: var(--inner-max);
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════════════════════════ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-content .section-title { margin-bottom: 1.5rem; }
+
+.about-content p {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: var(--text-body);
+  margin-bottom: 1rem;
+  max-width: 580px;
+}
+
+.about-content p.lead {
+  font-size: 0.95rem;
+  color: var(--text-plat);
+  margin-bottom: 1.4rem;
+}
+
+.about-content strong { color: var(--text-plat); }
+
+/* Identity panel */
+.identity-panel {
+  background: var(--panel);
+  border: 1px solid rgba(229,169,60,0.18);
+  padding: 1.75rem;
+}
+
+.identity-panel-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(229,169,60,0.15);
+}
+
+.identity-dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+}
+
+.identity-dl dt {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-grey);
+  white-space: nowrap;
+}
+
+.identity-dl dd {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-plat);
+}
+
+.identity-dl dd.highlight {
+  color: var(--cyan);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TOPICS
+═══════════════════════════════════════════════════════════ */
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(229,169,60,0.08); /* gap colour */
+  border: 1px solid rgba(229,169,60,0.08);
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background: var(--panel);
+  padding: 1.4rem 1.5rem;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.topic-card:hover {
+  background: var(--surface);
+}
+
+/* Active top-left bracket on hover */
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 12px; height: 12px;
+  border-top: 2px solid var(--gold);
+  border-left: 2px solid var(--gold);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.topic-card:hover::before { opacity: 1; }
+
+.topic-card-label {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.topic-card-icon {
+  font-size: 1rem;
+  color: var(--cyan);
+  opacity: 0.7;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.topic-card p {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0;
+}
+
+.huntress-note {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-grey);
+  border-left: 2px solid rgba(229,169,60,0.3);
+  padding-left: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.huntress-note a { color: var(--gold); }
+
+/* ═══════════════════════════════════════════════════════════
+   PLATFORMS
+═══════════════════════════════════════════════════════════ */
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+/* Chamfered border using wrapper + inner technique */
+.platform-card-outer {
+  background: rgba(229,169,60,0.15);
+  clip-path: polygon(0 0, 92% 0, 100% 12%, 100% 100%, 0 100%);
+  padding: 1px;
+  transition: background 0.25s;
+}
+
+.platform-card-outer:hover {
+  background: rgba(229,169,60,0.5);
+}
+
+.platform-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: var(--panel);
+  clip-path: polygon(0 0, 92% 0, 100% 12%, 100% 100%, 0 100%);
+  padding: 1.25rem 1rem 1rem;
+  text-decoration: none;
+  height: 100%;
+  transition: background 0.2s;
+}
+
+.platform-card:hover {
+  background: var(--surface);
+}
+
+.platform-card .p-icon {
+  font-size: 1.4rem;
+  transition: text-shadow 0.2s;
+}
+
+.platform-card:hover .p-icon {
+  text-shadow: 0 0 12px currentColor;
+}
+
+/* Platform icon colours */
+.p-icon--linkedin  { color: var(--cyan); }
+.p-icon--youtube   { color: var(--magenta); }
+.p-icon--x         { color: var(--text-body); }
+.p-icon--instagram { color: var(--gold); }
+.p-icon--blog      { color: var(--gold); }
+
+.platform-card .p-name {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-plat);
+}
+
+.platform-card .p-desc {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SPEAKING + CONTACT
+═══════════════════════════════════════════════════════════ */
+
+.speaking-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Speaking */
+.speaking-panel {
+  background: var(--panel);
+  border: 1px solid rgba(229,169,60,0.15);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.speaking-panel-header {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  margin-bottom: 0.8rem;
+}
+
+.speaking-empty {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-grey);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+.speaking-formats {
+  margin-top: 1.2rem;
+}
+
+.speaking-formats p {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin-bottom: 0.8rem;
+}
+
+.format-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.format-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  background: var(--cyan-faint);
+  border: 1px solid rgba(0,240,255,0.18);
+  padding: 0.2rem 0.55rem;
+}
+
+/* Contact */
+.contact-content .section-title { margin-bottom: 1.2rem; }
+
+.contact-content p {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  max-width: 420px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold);
+  border: 1px solid rgba(229,169,60,0.35);
+  padding: 0.6rem 1.1rem;
+  margin-bottom: 1.8rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.contact-email:hover {
+  background: var(--gold-faint);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  border: 1px solid rgba(80,85,101,0.4);
+  padding: 0.4rem 0.8rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--gold);
+  border-color: rgba(229,169,60,0.4);
+}
+
+.social-link i { font-size: 0.85rem; }
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════ */
+
+#site-footer {
+  background: var(--void);
+  border-top: 1px solid rgba(229,169,60,0.12);
+  padding: 1.5rem 2rem;
+}
+
+.footer-inner {
+  max-width: var(--inner-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-grey);
+  letter-spacing: 0.06em;
+}
+
+.footer-copy span {
+  color: var(--gold);
+}
+
+.footer-term {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-grey);
+  letter-spacing: 0.06em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE — TABLET / MOBILE
+═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .identity-panel { max-width: 400px; }
+
+  .platforms-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .speaking-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: block; }
+
+  .hero-panel {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-bg-text { display: none; }
+
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 420px) {
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Chamfer too aggressive on very small screens */
+  .platform-card-outer,
+  .platform-card {
+    clip-path: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════════════ -->
+
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#hero">[ JS ]</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#speaking">Speaking</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+  </div>
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#platforms">Platforms</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+
+<section id="hero" aria-label="Introduction">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-scanlines" aria-hidden="true"></div>
+  <div class="hero-bg-text" aria-hidden="true">root@josh:~#</div>
+
+  <div class="hero-inner">
+    <div class="hero-panel bracketed">
+      <span class="status-tag">SYS_STATUS: ACTIVE</span>
+
+      <h1 class="hero-name">
+        <span class="name-josh">Josh</span>
+        <span class="name-sep"> // </span>
+        <span class="name-last">Springthorpe</span>
+      </h1>
+
+      <p class="hero-sub">
+        Technical Account Manager at Huntress. Practical cybersecurity for MSPs and IT professionals — no jargon, no scare tactics.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#about" class="btn-primary">About Me</a>
+        <a href="https://blog.joshspringthorpe.com" class="btn-secondary" target="_blank" rel="noopener">Read the Blog</a>
+      </div>
+
+      <p class="term">root@josh:~# _</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════ -->
+
+<section id="about" class="section" aria-label="About Josh Springthorpe">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <div class="about-content">
+        <h2 class="section-title">About <span class="sep">//</span> <span class="sub">Josh Springthorpe</span></h2>
+
+        <p class="lead">Frontline ambulance technician turned cybersecurity professional. Not a career path you see very often, but it turns out triage skills transfer surprisingly well.</p>
+
+        <p>I spent the better part of a decade in the NHS — occupational therapy assistant, physiotherapy assistant, then frontline ambulance technician with West Midlands Ambulance Service. At 28 I decided that wasn't stressful enough and pivoted into IT via an apprenticeship.</p>
+
+        <p>Five years as technical and security manager at a UK MSP followed — deploying security stacks for small businesses, responding to incidents, and watching the same avoidable problems play out over and over. I'm now a Technical Account Manager at <strong>Huntress Labs</strong>, which means I have an obvious stake in the MDR market. I try to be transparent about that rather than pretending to be a neutral party.</p>
+
+        <p>Most security content isn't written for the people who need it most — the IT technician trying to level up, the business owner who doesn't know where to start, the career changer who got into this from somewhere unexpected. This is for them.</p>
+
+        <p class="term">root@josh:~# _</p>
+      </div>
+
+      <aside aria-label="Josh Springthorpe profile">
+        <div class="identity-panel bracketed">
+          <h3 class="identity-panel-title">// Operator</h3>
+          <dl class="identity-dl">
+            <dt>Role</dt>
+            <dd class="highlight">TAM @ Huntress Labs</dd>
+
+            <dt>Background</dt>
+            <dd>NHS · WMAS · MSP</dd>
+
+            <dt>Location</dt>
+            <dd>United Kingdom</dd>
+
+            <dt>Focus</dt>
+            <dd>M365 · Azure · UK SMB</dd>
+
+            <dt>Status</dt>
+            <dd class="highlight">Active</dd>
+          </dl>
+          <p class="term">root@josh:~# _</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     TOPICS
+════════════════════════════════════════════════════════ -->
+
+<section id="topics" class="section section--alt" aria-label="Topics">
+  <div class="section-inner">
+    <h2 class="section-title">Topics <span class="sep">//</span> <span class="sub">What I Cover</span></h2>
+    <p class="section-intro">Six areas. All practical, all grounded in what's actually happening in UK MSPs and IT teams right now.</p>
+
+    <div class="topics-grid">
+
+      <div class="topic-card">
+        <i class="fa-brands fa-microsoft topic-card-icon"></i>
+        <span class="topic-card-label">Microsoft 365 &amp; Entra ID</span>
+        <p>Conditional Access, Defender, Secure Score, identity hardening. The platform most UK SMBs live on — and the one attackers know best.</p>
+      </div>
+
+      <div class="topic-card">
+        <i class="fa-solid fa-cloud topic-card-icon"></i>
+        <span class="topic-card-label">Azure &amp; Cloud Security</span>
+        <p>RBAC, resource hardening, Sentinel, cost-conscious architecture. Cloud security that doesn't require a dedicated team to maintain.</p>
+      </div>
+
+      <div class="topic-card">
+        <i class="fa-solid fa-flag topic-card-icon"></i>
+        <span class="topic-card-label">UK Threat Landscape</span>
+        <p>Active campaigns targeting UK organisations. NCSC advisories translated into what you actually need to do — rather than what the advisory says you should do.</p>
+      </div>
+
+      <div class="topic-card">
+        <i class="fa-solid fa-shield-halved topic-card-icon"></i>
+        <span class="topic-card-label">Practical Defence</span>
+        <p>Cyber Essentials walkthroughs, real configurations, free tooling. The stuff that blocks the vast majority of attacks without a six-figure budget.</p>
+      </div>
+
+      <div class="topic-card">
+        <i class="fa-solid fa-robot topic-card-icon"></i>
+        <span class="topic-card-label">AI Threats &amp; Defence</span>
+        <p>How attackers use AI right now, and how defenders can too. What's real, what's hype, and what actually changes your risk posture.</p>
+      </div>
+
+      <div class="topic-card">
+        <i class="fa-solid fa-route topic-card-icon"></i>
+        <span class="topic-card-label">Career in Cyber</span>
+        <p>Non-traditional routes, honest advice, and what nobody tells you before you make the jump. I came from the NHS at 28 — the non-linear path is a feature, not a bug.</p>
+      </div>
+
+    </div>
+
+    <p class="huntress-note">
+      I work at <a href="https://www.huntress.com" target="_blank" rel="noopener">Huntress</a>, which means I have opinions about the MDR space. I try to be transparent about that rather than pretending otherwise. When something solves a problem I'll say so; when it doesn't, I'll say that too.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PLATFORMS
+════════════════════════════════════════════════════════ -->
+
+<section id="platforms" class="section" aria-label="Content platforms">
+  <div class="section-inner">
+    <h2 class="section-title">Platforms <span class="sep">//</span> <span class="sub">Find Me</span></h2>
+    <p class="section-intro">Everything is free. Most of it is practical. Some of it is mildly sarcastic about the state of the industry.</p>
+
+    <div class="platforms-grid">
+
+      <div class="platform-card-outer">
+        <a href="https://linkedin.com/in/josh-springthorpe" target="_blank" rel="noopener" class="platform-card" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin p-icon p-icon--linkedin"></i>
+          <span class="p-name">LinkedIn</span>
+          <p class="p-desc">Threat breakdowns, quick wins, and the occasional take on why the industry needs to talk to normal people differently. 3–5 posts a week.</p>
+        </a>
+      </div>
+
+      <div class="platform-card-outer">
+        <a href="https://www.youtube.com/@JoshSpringthorpe" target="_blank" rel="noopener" class="platform-card" aria-label="YouTube">
+          <i class="fa-brands fa-youtube p-icon p-icon--youtube"></i>
+          <span class="p-name">YouTube</span>
+          <p class="p-desc">Tutorials and walkthroughs. M365 hardening, Entra ID configuration, threat breakdowns — built for UK MSP and IT contexts.</p>
+        </a>
+      </div>
+
+      <div class="platform-card-outer">
+        <a href="https://twitter.com/JoshSpringthorpe" target="_blank" rel="noopener" class="platform-card" aria-label="X / Twitter">
+          <i class="fa-brands fa-x-twitter p-icon p-icon--x"></i>
+          <span class="p-name">X / Twitter</span>
+          <p class="p-desc">The sharpest version of a thought. Real-time commentary on threats, tools, and industry nonsense.</p>
+        </a>
+      </div>
+
+      <div class="platform-card-outer">
+        <a href="https://www.instagram.com/joshspringthorpe" target="_blank" rel="noopener" class="platform-card" aria-label="Instagram">
+          <i class="fa-brands fa-instagram p-icon p-icon--instagram"></i>
+          <span class="p-name">Instagram</span>
+          <p class="p-desc">Visual guides and awareness content in a format you can share with a non-technical team.</p>
+        </a>
+      </div>
+
+      <div class="platform-card-outer">
+        <a href="https://blog.joshspringthorpe.com" target="_blank" rel="noopener" class="platform-card" aria-label="Blog">
+          <i class="fa-solid fa-rss p-icon p-icon--blog"></i>
+          <span class="p-name">Blog</span>
+          <p class="p-desc">The long-form stuff. In-depth walkthroughs, threat analysis, and the detail that doesn't fit in a LinkedIn post.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SPEAKING + CONTACT
+════════════════════════════════════════════════════════ -->
+
+<section id="speaking" class="section section--alt">
+  <div class="section-inner">
+    <div class="speaking-contact-grid">
+
+      <!-- Speaking -->
+      <div aria-label="Speaking and events">
+        <h2 class="section-title">Speaking <span class="sep">//</span> <span class="sub">Events</span></h2>
+        <p class="section-intro" style="margin-bottom:1.5rem;">Talks, panels, and podcasts on practical cybersecurity for UK MSPs and IT professionals.</p>
+
+        <div class="speaking-panel bracketed">
+          <p class="speaking-panel-header">// Upcoming</p>
+          <p class="speaking-empty">No events currently scheduled — follow <a href="https://linkedin.com/in/josh-springthorpe" target="_blank" rel="noopener" style="color:var(--cyan);">LinkedIn</a> for announcements.</p>
+        </div>
+
+        <div class="speaking-formats">
+          <p>Open to speaking engagements on the topics I cover — conferences, MSP events, podcasts, and webinars. If it's useful to an MSP or IT audience, I'm interested.</p>
+          <div class="format-tags">
+            <span class="format-tag">Conferences</span>
+            <span class="format-tag">MSP Events</span>
+            <span class="format-tag">Podcasts</span>
+            <span class="format-tag">Webinars</span>
+            <span class="format-tag">Panels</span>
+          </div>
+        </div>
+
+        <p class="term">root@josh:~# _</p>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" aria-label="Contact">
+        <h2 class="section-title">Contact <span class="sep">//</span> <span class="sub">Get in Touch</span></h2>
+        <p class="section-intro" style="margin-bottom:1.5rem;">Whether you've got a question, a topic suggestion, or want to collaborate — I genuinely want to hear from you.</p>
+
+        <a href="mailto:hello@joshspringthorpe.com" class="contact-email bracketed">
+          <i class="fa-solid fa-envelope"></i>
+          hello@joshspringthorpe.com
+        </a>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/josh-springthorpe" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.youtube.com/@JoshSpringthorpe" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+          <a href="https://twitter.com/JoshSpringthorpe" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-x-twitter"></i> X</a>
+          <a href="https://www.instagram.com/joshspringthorpe" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://blog.joshspringthorpe.com" target="_blank" rel="noopener" class="social-link"><i class="fa-solid fa-rss"></i> Blog</a>
+        </div>
+
+        <p class="term">root@josh:~# _</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; Josh Springthorpe 2026 &nbsp;|&nbsp; <span>Educate. Protect. Empower.</span></p>
+    <p class="footer-term">root@josh:~# _</p>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     JS
+════════════════════════════════════════════════════════ -->
+
+<script>
+(function () {
+
+  /* ── Mobile nav toggle ── */
+  const toggle = document.getElementById('navToggle');
+  const mobile = document.getElementById('navMobile');
+
+  toggle.addEventListener('click', function () {
+    const open = mobile.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    mobile.setAttribute('aria-hidden', !open);
+  });
+
+  /* Close mobile nav on link click */
+  mobile.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      mobile.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      mobile.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  /* ── Nav link active state on scroll ── */
+  const sections = document.querySelectorAll('section[id], div[id="contact"]');
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-mobile a');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + entry.target.id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(function (s) { observer.observe(s); });
+
+})();
+</script>
+
+</body>
 </html>
