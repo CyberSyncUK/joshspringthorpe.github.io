@@ -509,6 +509,60 @@ img { display: block; max-width: 100%; }
   padding: 1.75rem;
 }
 
+/* Headshot */
+.headshot-wrap {
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* Scanline overlay on photo */
+.headshot-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px, transparent 2px,
+    rgba(0,0,0,0.12) 2px, rgba(0,0,0,0.12) 4px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Cyan tint vignette */
+.headshot-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,240,255,0.06) 0%,
+    transparent 60%,
+    rgba(229,169,60,0.04) 100%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(0.55) brightness(0.88) contrast(1.05);
+  transition: filter 0.4s;
+}
+
+.headshot-wrap:hover .headshot {
+  filter: saturate(0.75) brightness(0.95) contrast(1.05);
+}
+
+/* Cyan frame border on the photo */
+.headshot-wrap {
+  border: 1px solid rgba(0,240,255,0.3);
+}
+
 .identity-panel-title {
   font-family: var(--font-display);
   font-weight: 700;
@@ -1010,6 +1064,9 @@ img { display: block; max-width: 100%; }
 
       <aside aria-label="Josh Springthorpe profile">
         <div class="identity-panel bracketed">
+          <div class="headshot-wrap">
+            <img src="images/headshot.jpg" alt="Josh Springthorpe" class="headshot" />
+          </div>
           <h3 class="identity-panel-title">// Operator</h3>
           <dl class="identity-dl">
             <dt>Role</dt>
