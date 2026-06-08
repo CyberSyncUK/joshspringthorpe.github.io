@@ -898,6 +898,7 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
+  row-gap: 0;
 }
 
 .footer-copy {
@@ -909,6 +910,17 @@ img { display: block; max-width: 100%; }
 
 .footer-copy span {
   color: var(--gold);
+}
+
+.footer-disclaimer {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  width: 100%;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(80,85,101,0.2);
+  margin-top: 0.4rem;
 }
 
 .footer-term {
@@ -1055,9 +1067,13 @@ img { display: block; max-width: 100%; }
 
         <p>I spent the better part of a decade in the NHS — occupational therapy assistant, physiotherapy assistant, then frontline ambulance technician with West Midlands Ambulance Service. At 28 I decided that wasn't stressful enough and pivoted into IT via an apprenticeship.</p>
 
-        <p>Five years as technical and security manager at a UK MSP followed — deploying security stacks for small businesses, responding to incidents, and watching the same avoidable problems play out over and over. I'm now a Technical Account Manager at <strong>Huntress Labs</strong>, which means I have an obvious stake in the MDR market. I try to be transparent about that rather than pretending to be a neutral party.</p>
+        <p>Five years as technical and security manager at a UK MSP followed — deploying security stacks for small businesses, responding to incidents, and watching the same avoidable problems play out over and over.</p>
 
-        <p>Most security content isn't written for the people who need it most — the IT technician trying to level up, the business owner who doesn't know where to start, the career changer who got into this from somewhere unexpected. This is for them.</p>
+        <p>I am now a Technical Account Manager at <strong>Huntress Labs</strong>. That gives me firsthand experience in this space and, obviously, a point of view. This site reflects my own expertise, opinions and practical experience. It is not an official Huntress channel, and nothing here should be taken as a formal company position.</p>
+
+        <p>I'll sometimes share or amplify Huntress content here when I think it's genuinely useful. When I do, I'm sharing it as an individual on my own platform, not speaking on behalf of the company.</p>
+
+        <p>If something works I'll say so. If something doesn't, I'll say that too. The goal is simple: useful, honest cybersecurity education and advice without the usual nonsense.</p>
 
         <p class="term">root@josh:~# _</p>
       </div>
@@ -1070,10 +1086,10 @@ img { display: block; max-width: 100%; }
           <h3 class="identity-panel-title">// Operator</h3>
           <dl class="identity-dl">
             <dt>Role</dt>
-            <dd class="highlight">TAM @ Huntress Labs</dd>
+            <dd class="highlight">Technical Account Manager @ Huntress Labs</dd>
 
             <dt>Background</dt>
-            <dd>NHS · WMAS · MSP</dd>
+            <dd>NHS · MSP · Huntress</dd>
 
             <dt>Location</dt>
             <dd>United Kingdom</dd>
@@ -1143,7 +1159,7 @@ img { display: block; max-width: 100%; }
     </div>
 
     <p class="huntress-note">
-      I work at <a href="https://www.huntress.com" target="_blank" rel="noopener">Huntress</a>, which means I have opinions about the MDR space. I try to be transparent about that rather than pretending otherwise. When something solves a problem I'll say so; when it doesn't, I'll say that too.
+      I work at <a href="https://www.huntress.com" target="_blank" rel="noopener">Huntress Labs</a>. This site reflects my own expertise, opinions and practical experience — not an official Huntress position. If something works I'll say so. If something doesn't, I'll say that too.
     </p>
 
   </div>
@@ -1271,6 +1287,7 @@ img { display: block; max-width: 100%; }
 <footer id="site-footer">
   <div class="footer-inner">
     <p class="footer-copy">&copy; Josh Springthorpe 2026 &nbsp;|&nbsp; <span>Educate. Protect. Empower.</span></p>
+    <p class="footer-disclaimer">I work at Huntress Labs, but this website reflects my own views, experience and analysis — not official Huntress positions or statements.</p>
     <p class="footer-term">root@josh:~# _</p>
   </div>
 </footer>
