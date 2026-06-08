@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Josh Springthorpe | Cybersecurity" />
   <meta name="twitter:description" content="Practical cybersecurity for MSPs and IT professionals. No jargon, no scare tactics." />
-  <!-- Favicon: add favicon.ico / logo_shield.png to <images/> when available -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -234,17 +234,22 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-brand {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 0.9rem;
-  color: var(--gold);
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 10px rgba(229,169,60,0.4);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 
-.nav-brand:hover { color: var(--gold); }
+.nav-glyph {
+  height: 32px;
+  width: auto;
+  filter: drop-shadow(0 0 6px rgba(0,240,255,0.4));
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.nav-brand:hover .nav-glyph {
+  filter: drop-shadow(0 0 10px rgba(0,240,255,0.7));
+  transform: scale(1.06);
+}
 
 .nav-links {
   display: flex;
@@ -422,6 +427,15 @@ img { display: block; max-width: 100%; }
   text-shadow:
     0 0 10px var(--gold),
     0 0 28px rgba(229,169,60,0.35);
+}
+
+.hero-glyph {
+  width: 72px;
+  height: auto;
+  margin-bottom: 1.2rem;
+  filter:
+    drop-shadow(0 0 8px rgba(0,240,255,0.5))
+    drop-shadow(0 0 20px rgba(0,240,255,0.2));
 }
 
 .hero-sub {
@@ -915,7 +929,9 @@ img { display: block; max-width: 100%; }
 
 <nav id="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a class="nav-brand" href="#hero">[ JS ]</a>
+    <a class="nav-brand" href="#hero" aria-label="Josh Springthorpe">
+      <img src="images/js-glyph.svg" alt="JS" class="nav-glyph" />
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#topics">Topics</a></li>
@@ -946,6 +962,7 @@ img { display: block; max-width: 100%; }
 
   <div class="hero-inner">
     <div class="hero-panel bracketed">
+      <img src="images/js-glyph.svg" alt="Josh Springthorpe logo" class="hero-glyph" />
       <span class="status-tag">SYS_STATUS: ACTIVE</span>
 
       <h1 class="hero-name">
